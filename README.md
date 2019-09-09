@@ -1,4 +1,4 @@
-# Tcp Socket Over Windows Defauft HTTP Proxy
+# Tcp Socket over Windows Default HTTP Proxy
 
 Small Windows .net program that allow to tunel tcp connection (port forwading) over windows default http proxy. 
 It supports windows build in proxy authentification as kerberos or NTLMv2.
