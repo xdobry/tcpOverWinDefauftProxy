@@ -1,9 +1,9 @@
-# Tcp Socket Over Windinws Defauft HTTP Proxy
+# Tcp Socket Over Windows Defauft HTTP Proxy
 
 Small Windows .net program that allow to tunel tcp connection (port forwading) over windows default http proxy. 
 It supports windows build in proxy authentification as kerberos or NTLMv2.
 
-It can handle multiple connection
+It can handle multiple connections.
 
 # Usage
 
@@ -19,7 +19,7 @@ run
 tclproxy myhost.com 22 2222
 
 This will open local port on 2222 and forward all incomming connections to myhost.com:22 over the http proxy. It uses the proxy Socket forwaring by using CONNECT request.
-After it you are ready to use your tunnel by your program. For example ssh (it will connect the myhost on 22 by using the http proxy as tunnel).
+After it you are ready to use your tunnel by your program. For example ssh (it will connect the myhost on 22 by using the http proxy as tunnel. You need to connecto to 2222 on localhost 127.0.0.1).
 
 ssh -p 2222 127.0.0.1
 
