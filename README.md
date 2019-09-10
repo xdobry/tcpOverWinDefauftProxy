@@ -12,7 +12,7 @@ It can handle multiple connections.
 # Example
 
 If you want to connect the ssh on target host *myhost.com* on port *22* but your network does not allow this connection and the putty does not support the proxy authentification setting and you always get 407 proxy error.
-Check if your windows browser is working. It means your default system proxy is up and running.
+Check if your windows browser is working. It means your default system proxy is up and running. Then run the tclproxy program (see releases to get executable https://github.com/xdobry/tcpOverWinDefaultProxy/releases/download/v0.1/tcpproxy.zip) or compile it yourself by using the compile.bat script (some envirorment settings needs to be adapted first).
 
 > tclproxy myhost.com 22 2222
 
@@ -25,5 +25,5 @@ The tcpproxy program will dump some information on every incoming and closed cli
 
 # Internals
 
-The programm is written in .NET (tested with 4.0) it uses the possiblity that windows pass the proxy setting from standard browser (IE) to all .NET programs. It also handles the transparently the proxy authentification methods (as NTLM or Kerberos) that sometime is not supported by unix derived programs or older one (like ssh, putty, git, ....).
+The programm is written in .NET (tested with 4.0) it uses the possiblity that windows pass the proxy setting from standard browser (IE) to all .NET programs. It also handles transparently the proxy authentification methods (as NTLM or Kerberos) that sometime is not supported by unix derived programs or older one (like ssh, putty, git, ....).
 It uses asynchron socket API for maximal performance.
